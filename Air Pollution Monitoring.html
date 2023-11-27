@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/ankit/OneDrive/Desktop/Air%20pollution.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Pollution Monitoring</title>
+	
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            background-color: black;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 2em;
+        }
+
+        .sensor {
+            flex: 0 1 calc(30% - 20px);
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin-bottom: 1em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition */
+        }
+
+        .sensor:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Highlight on hover */
+        }
+
+        /* Add styling for sensor titles */
+        .sensor h2 {
+            color: #333;
+            margin-bottom: 0.5em;
+        }
+
+        /* Add styling for pollution values */
+        .sensor p span {
+            font-weight: bold;
+            color: #339;
+        }
+
+        footer {
+            background-color: #345;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            
+            bottom: 0;
+            width: 100%;
+			
+        }
+		
+		h1{
+		color: white;
+		}
+		
+		.define{
+		font-style: serif;
+		color: white;
+		}
+    </style>
+</head>
+      <body>
+    
+    <header>
+        <h1>Air Pollution Monitoring System</h1>
+		<img src="./Air Pollution Monitoring_files/air image project.jpg" width="100%" height="75%">
+    </header>
+     
+	  <img src="./Air Pollution Monitoring_files/air pollution project image 1.jfif" alt="home" width="355px" height="270px">
+		<img src="./Air Pollution Monitoring_files/air pollution project.jfif" alt="Air purifier" width="355px" height="270px">
+       <img src="./Air Pollution Monitoring_files/OIP.jfif" alt="measuring" width="355px" height="270px">
+	   <img src="./Air Pollution Monitoring_files/e28aa7e9-78d0-4f02-b229-67fe77668308.198c2ae14eb8f3043d336aadcf2bae2a.jpeg" alt="machine" width="355px" height="270px">
+	<section>
+        <div class="sensor">
+            <h2>Sensor 1 (Punjab)</h2>
+            <p>PM2.5: <span id="pm25_1">53</span> µg/m³</p>
+            <p>PM10: <span id="pm10_1">76</span> µg/m³</p>
+        </div>
+
+        <div class="sensor">
+            <h2>Sensor 2 (Delhi)</h2>
+            <p>PM2.5: <span id="pm25_2">72</span> µg/m³</p>
+            <p>PM10: <span id="pm10_2">98</span> µg/m³</p>
+        </div>
+
+        <!-- Add more sensors -->
+        <div class="sensor">
+            <h2>Sensor 3 (Uttar Pradesh)</h2>
+            <p>PM2.5: <span id="pm25_3">5</span> µg/m³</p>
+            <p>PM10: <span id="pm10_3">89</span> µg/m³</p>
+        </div>
+
+        <div class="sensor">
+            <h2>Sensor 4 (Maharashtra)</h2>
+            <p>PM2.5: <span id="pm25_4">32</span> µg/m³</p>
+            <p>PM10: <span id="pm10_4">18</span> µg/m³</p>
+        </div>
+		
+        <div class="sensor">
+            <h2>Sensor 5 (Haryana)</h2>
+            <p>PM2.5: <span id="pm25_5">95</span> µg/m³</p>
+            <p>PM10: <span id="pm10_5">79</span> µg/m³</p>
+        </div>
+        <!-- Repeat the sensor block as needed -->
+
+    </section>
+
+	<p class="define">Air pollution is a serious environmental and health issue that affects millions of people in India. According to the web search results, here are some facts about the air pollution levels in Delhi, Punjab, and Maharashtra:</p>
+    <script>
+        // Sample JavaScript for updating sensor values
+        setInterval(() => {
+            updateSensorValues('pm25_1', getRandomValue());
+            updateSensorValues('pm10_1', getRandomValue());
+            updateSensorValues('pm25_2', getRandomValue());
+            updateSensorValues('pm10_2', getRandomValue());
+            updateSensorValues('pm25_3', getRandomValue());
+            updateSensorValues('pm10_3', getRandomValue());
+            updateSensorValues('pm25_4', getRandomValue());
+            updateSensorValues('pm10_4', getRandomValue());
+			updateSensorValues('pm25_5', getRandomValue());
+            updateSensorValues('pm10_5', getRandomValue());
+            // Add more sensor updates as needed
+        }, 5000); // Update every 5 seconds
+
+        function getRandomValue() {
+            return Math.floor(Math.random() * 100);
+        }
+
+        function updateSensorValues(sensorId, value) {
+            document.getElementById(sensorId).innerText = value;
+        }
+    </script>
+	
+	
+	
+	 <footer>
+        © 2023 Air Pollution Monitoring
+		 <h3>Made by Ankit, Raj kumar, Mohd.Saif.</h3>
+        <p>Contact Us: Gmail: ankitkumar829301@gmail.com
+        </p>
+	</footer>
+	
+	</body></html>
